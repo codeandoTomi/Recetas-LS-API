@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: darkturquoise; }
+
+header {
+  background-color: darkgoldenrod;
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around; }
+  header h3 {
+    color: blanchedalmond; }
+  header nav a {
+    margin: 5px;
+    text-decoration: none;
+    color: blanchedalmond; }
+
+main {
+  background-color: #00b3b6;
+  padding: 10px; }
+  main .buscador {
+    padding: 20px;
+    background-color: #057e80;
+    border-radius: 10px; }
+    main .buscador .buscador2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .buscador .buscador2 select, main .buscador .buscador2 label {
+        margin: 5px; }
+      main .buscador .buscador2 select {
+        text-align: center;
+        width: 30%;
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 20px;
+        font-weight: 600; }
+  main .resultado {
+    padding: 20px; }
+
+.resultado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .resultado .card {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px;
+    background-color: #97ad0c; }
+    .resultado .card .recetaCard {
+      margin: 10px;
+      padding: 5px; }
+      .resultado .card .recetaCard .imgJS {
+        width: 200px; }
+      .resultado .card .recetaCard .cardBody h5 {
+        padding: 10px; }
+      .resultado .card .recetaCard .cardBody .btnJS {
+        width: 80%;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #1fb6b6; }
+      .resultado .card .recetaCard .cardBody .btnJS:hover {
+        background-color: #64647e; }
+
+footer {
+  padding: 15px;
+  background-color: black; }
+  footer h2 {
+    color: white; }
+
+.main2 {
+  display: flex;
+  justify-content: center; }
+  .main2 button {
+    padding: 5px;
+    width: 40%;
+    background-color: #41af4e;
+    border-radius: 10px; }
+  .main2 .contenedorBTN {
+    border-radius: 40%; }
+
+.modal {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #ae6969;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 500px; }
+  .modal .contenedor {
+    padding: 10px; }
+  .modal .contenedor2 {
+    padding: 10px; }
+  .modal .imgModal {
+    width: 300px; }
+  .modal p {
+    font-size: 15px; }
+  .modal h3, .modal p, .modal ul {
+    margin: 5px; }
+  .modal .listJS {
+    border: 1px solid black;
+    padding: 5px;
+    list-style-type: none; }
+
+.modal2 {
+  display: flex;
+  flex-direction: column; }

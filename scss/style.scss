@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: darkturquoise;
+}
+
+header{
+    background-color: darkgoldenrod;
+    padding: 5px;
+
+    position: sticky;
+    top: 0px;
+
+    display: flex;
+    justify-content: space-around;
+    h3{
+        color: blanchedalmond;
+    }
+    nav{
+        a{
+            margin: 5px;
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+    }
+}
+
+main{
+    background-color: rgb(0, 179, 182);
+    padding: 10px;
+    
+    
+    .buscador{
+        padding: 20px;
+        background-color: rgb(5, 126, 128);
+        border-radius: 10px;
+
+        .buscador2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            select,label{
+                margin: 5px;
+            }
+            select{
+                text-align: center;
+                width: 30%;
+                font-size: 20px;
+                padding: 5px;
+                border-radius: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .resultado{
+        padding: 20px;
+    }
+}
+
+.resultado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 15px;
+        padding: 5px;
+        background-color: rgb(151, 173, 12);
+
+        .recetaCard{
+            margin: 10px;
+            padding: 5px;
+
+            .imgJS{
+                width: 200px;
+
+            }
+            .cardBody{
+
+                h5{
+                    padding: 10px;
+                }
+                .btnJS{
+                    width: 80%;
+                    font-size: 22px;
+                    font-weight: 600;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background-color: rgb(31, 182, 182);
+                }
+                .btnJS:hover{
+                    background-color: rgb(100, 100, 126);
+                }
+            }
+        }
+
+    }
+
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+footer{
+    padding: 15px;
+    background-color: black;
+    
+    
+
+    h2{
+        color: white;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.main2{
+    display: flex;
+    justify-content: center;
+    button{
+        padding: 5px;
+        width: 40%;
+        background-color: rgb(65, 175, 78);
+        border-radius: 10px;
+    }
+    .contenedorBTN{
+        border-radius: 40%;
+    }
+}
+.modal{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(174, 105, 105);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: none;
+    z-index: 1000;
+
+    overflow-y: auto;
+    max-height: 500px; 
+
+    .contenedor{
+        padding: 10px;
+
+    }
+    .contenedor2{
+        padding: 10px;
+        
+    }
+
+    .imgModal{
+        width: 300px;
+    }
+    p{
+        font-size: 15px;
+    }
+    h3,p,ul{
+        margin: 5px;
+    }
+    .listJS{
+        border: 1px solid black;
+        padding: 5px;
+        list-style-type: none;
+    }
+}
+.modal2{
+    display: flex;
+    flex-direction: column;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
